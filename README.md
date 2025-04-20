@@ -1,4 +1,43 @@
-﻿# ID-based RAG FastAPI
+⚙️ RedApi Synaptica (форк RedApi, кастомизированный API-интерфейс для агентов и интеграций Synaptica)
+# ⚙️ RedApi Synaptica
+> Кастомизированная версия RedApi, работающая как промежуточный слой API-интеграций для Synaptica Core и внешних сервисов.
+
+## 🎯 Что это за проект?
+RedApi Synaptica является центральным API-шлюзом, обеспечивающим:
+- Простую интеграцию внешних API (Google, Asana, n8n, Telegram, Supabase).
+- Унифицированный доступ агентов и сервисов к внешним ресурсам.
+- Удобное расширение функционала через плагины и модули.
+
+## 🚧 Изменения по сравнению с оригиналом:
+- Полная интеграция с Synaptica Core через MCP (Master Control Protocol).
+- Добавлена поддержка расширенного набора API (Telegram, Google, n8n).
+- Повышена безопасность и контроль доступа через API-ключи и Supabase.
+
+## 🛠 Технологии:
+- Python (FastAPI, Uvicorn)
+- Pydantic, HTTPX, Litellm
+- Docker & Docker Compose
+
+## 🚀 Установка и запуск:
+```shell
+git clone https://github.com/your_org/RedApi_Synaptica.git
+cd RedApi_Synaptica
+docker-compose up -d
+
+🌳 Структура проекта: 
+ RedApi_Synaptica
+├── app
+│   ├── routers
+│   ├── integrations
+│   └── core
+├── Dockerfile
+└── docker-compose.yml
+ 
+ 
+ 
+ 
+ 
+ # ID-based RAG FastAPI
 
 ## Overview
 This project integrates Langchain with FastAPI in an Asynchronous, Scalable manner, providing a framework for document indexing and retrieval, using PostgreSQL/pgvector.
